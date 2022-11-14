@@ -1,0 +1,1871 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .tablas{
+                display: flex;
+            }
+            .pf-1{
+                margin-right: 25px;
+            }
+            .pf-2{
+                margin-left: 25px;
+            }
+            .pf-3{
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+            .pf-4{
+                margin-right: 200px;
+                margin-left: 200px;
+            }
+            .botones{
+                display: flex;
+            }
+            .pf-5{
+                margin-right: 5px;
+                margin-left: 700px;
+            }
+            .pf-6{
+                margin-right: 10px;
+                margin-left: 5px;
+            }
+        </style>
+    </head>
+    <header>
+        <fieldset>
+            <center>
+                <leyend>
+                    Tecnologías para el Desarrollo de Apliaciones Web <br>
+                    4CM2 <br>
+                    Proyecto: 1 <br> 
+                    Bernal Pérez Luis Angel
+                </leyend>
+            </center>  
+        </fieldset>
+    </header>
+
+    <body>
+        <br>
+        <fieldset>
+            <legend>Practica 1 Bernal Pérez Luis Ángel</legend>
+            <form action="#" method="post" name="frmDatos" id="frmDatos">
+                <main>
+                    <center>
+                        <table border="1">
+                            <tr>
+                                <th colspan="3">Solicitud de Empleo</th>
+                            </tr>
+                            <tr>
+                                <th>Puesto Solicitado</th>
+                                <th>Fecha</th>
+                                <th>Fotografia</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>
+                                        <input type="text" name="Puesto" id="txtPuesto" 
+                                        placeholder="Pon tu puesto solicitado"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="date" name="txtFecha" id="txtFecha"
+                                            placeholder="Ingresa la fecha"
+                                            required/>
+                                    </center>  
+                                </td>
+                                <td rowspan="5">
+                                    <center>
+                                        <input type="file" id="txtFoto" name="txtFoto"/>
+                                    </center> 
+                                </td>
+                            </tr>       
+                            <tr>
+                                <td rowspan="5">Favor de llenar este campo</td>
+                                <th>Sueldo Mensual Deseado</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>
+                                        <input type="text" name="Solicitado" id="txtSolicitado" 
+                                        placeholder="Pon tu sueldo solicitado"
+                                        maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Sueldo Mensual Autorizado</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>
+                                        <input type="text" name="Autorizado" id="txtAutorizado" 
+                                        placeholder="Ingresa el sueldo autorizado"
+                                        maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </center>
+            
+                    <br>
+                    <!--Iniciamos la segunda parte del cuadro-->
+                    <center>
+                        <table border="1">
+                            <tr>
+                                <th colspan="5">DATOS PERSONALES</th>
+                            </tr>
+                            <tr>
+                                <th colspan="3">Apellido Paterno&nbsp;&nbsp;&nbsp;Apellido Materno&nbsp;&nbsp;&nbsp;Nombre(s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                <th>Edad</th>
+                                <th>Sexo</th>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <center>
+                                        <input type="text" name="Nombre" id="txtNombre" 
+                                        placeholder="Ingresa tu nombre"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="number" id="txtEdad" name="txtEdad" 
+                                        value="20" step="2" min="16" max="90"/>
+                                    </center>  
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="radio" name="txtSexo" value="H" 
+                                        checked/>
+                                        <label for="txtSexo">H</label>
+            
+                                        <input type="radio" name="txtSexo" value="M" />
+                                        <label for="txtSexo">M</label>
+                                    </center> 
+                                </td>
+                            </tr>       
+                            <tr>
+                                <center>
+                                   <th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Domicilio(calle y número)&nbsp;&nbsp;&nbsp; Colonia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                    <th>Telefono</th>
+                                    <th colspan="2">Telefono (celular)</th> 
+                                </center>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="Domicilio" id="txtDomicilio" 
+                                        placeholder="Pon tu domicilio"
+                                        maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="telefono" id="txtTelefono" 
+                                        placeholder="Pon tu telefono"
+                                        maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="telefono" id="txtTelefono" 
+                                        placeholder="Pon tu celular"
+                                        maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <center>
+                                   <th colspan="2">Municipio Codigo Postal</th>
+                                    <th>Lugar de nacimiento</th>
+                                    <th>Nacionalidad</th>
+                                    <th>Correo electronico</th>
+                                </center>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="Municipio" id="txtMunicipio" 
+                                        placeholder="Pon tu municipio"
+                                        maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="nacimiento" id="txtNacimiento" 
+                                        placeholder="Pon tu lugar de nacimiento"
+                                        maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="nacionalidad" id="txtNacionalidad" 
+                                        placeholder="Pon tu nacionalidad"
+                                        maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="email" name="txtEmail" id="txtEmail"
+                                        placeholder="mail@gmail.com"
+                                        maxlength="50"
+                                        minlength="4"/>
+                                    </center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <center>
+                                   <th colspan="2">Vive con</th>
+                                    <th>Fecha de nacimiento</th>
+                                    <th>Estatura</th>
+                                    <th>Peso</th>
+                                </center>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="checkbox" name="txtVivecon" id="txtVivecon" 
+                                        value="Padres"/>
+                                        <label for="txtVivecon">Padres</label>
+                                        <input type="checkbox" name="txtVivecon" id="txtVivecon" 
+                                        value="Familia"/>
+                                        <label for="txtVivecon">Familia</label>
+                                        <input type="checkbox" name="txtVivecon" id="txtVivecon" 
+                                        value="Parientes"/>
+                                        <label for="txtVivecon">Parientes</label>
+                                        <input type="checkbox" name="txtVivecon" id="txtVivecon" 
+                                        value="Solo"/>
+                                        <label for="txtVivecon">Solo</label>
+                                    </center>
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="date" name="txtNacimiento" id="txtNacimiento"
+                                            placeholder="Ingresa la fecha de nacimiento"
+                                            required/>
+                                    </center>
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="estatura" id="txtEstatura" 
+                                        placeholder="Pon tu estatura"
+                                        maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="correo" id="txtCorreo" 
+                                        placeholder="Pon tu correo electronico"
+                                        maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <center>
+                                   <th colspan="3">Personas que dependen de usted</th>
+                                    <th colspan="2">Estado Civil</th>
+                                </center>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <center>
+                                        <input type="checkbox" name="txtVivecon" id="txtVivecon" 
+                                        value="Padres"/>
+                                        <label for="txtVivecon">Padres</label>
+                                        <input type="checkbox" name="txtVivecon" id="txtVivecon" 
+                                        value="Familia"/>
+                                        <label for="txtVivecon">Familia</label>
+                                        <input type="checkbox" name="txtVivecon" id="txtVivecon" 
+                                        value="Parientes"/>
+                                        <label for="txtVivecon">Parientes</label>
+                                        <input type="checkbox" name="txtVivecon" id="txtVivecon" 
+                                        value="Solo"/>
+                                        <label for="txtVivecon">Solo</label>
+                                    </center>
+                                </td>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="checkbox" name="txtEstadoC" id="txtEstadoC" 
+                                        value="Soltero"/>
+                                        <label for="txtEstadoC">Soltero</label>
+                                        <input type="checkbox" name="txtEstadoC" id="txtEstadoC" 
+                                        value="Casado"/>
+                                        <label for="txtEstadoC">Casado</label>
+                                        <input type="checkbox" name="txtEstadoC" id="txtEstadoC" 
+                                        value="Otro"/>
+                                        <label for="txtVivecon">Otro</label>
+                                        <input type="text" name="otro" id="txtOtro" 
+                                        placeholder="Ingrese el otro"
+                                        maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                            </tr>               
+                        </table>
+                    </center>
+            
+                    <!--Iniciamos la tercera parte parte del cuadro-->
+                    <br>
+                    <center>
+                        <table border="1">
+                            <tr>
+                                <th colspan="4">DOCUMENTACIÓN</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Reg. Fed. de Contribuyentes</th>
+                                <th colspan="2">Clave Única de Registro de Población (CURP)</th>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="Reg" id="txtReg" 
+                                        placeholder="Pon tu registro federal"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="CURP" id="txtCURP" 
+                                        placeholder="Pon tu CURP"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                            </tr>       
+                            <tr>
+                                <th>Número de Seguridad Social</th>
+                                <th>AFORE</th>
+                                <th>Pasaporte Núm. </th>
+                                <th>Cartilla Militar Núm.</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>
+                                        <input type="text" name="NSS" id="txtNSS" 
+                                        placeholder="Pon tu número de seguridad social"
+                                        maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="AFORE" id="txtAFORE" 
+                                        placeholder="Pon tu AFORE"
+                                        maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="PASAPORTE" id="txtPASAPORTE" 
+                                        placeholder="Pon tu número de pasaporte"
+                                        maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="cartilla" id="txtcartilla" 
+                                        placeholder="Pon tu número de cartilla militar"
+                                        maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Licencia de manejo</th>
+                                <th>Tipo y Núm Licencia</th>
+                                <th colspan="2">Si es extranjero cuenta que documento le permite laborar en el país</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>
+                                        <input type="text" name="Manejo" id="txtManejo" 
+                                        placeholder="Pon tu serie de manejo"
+                                        maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="NUMLICENCIA" id="txtLicencia" 
+                                        placeholder="Pon tu número de licencia"
+                                        maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="Extranjero" id="txtExtranjero" 
+                                        placeholder="Pon tu permiso de extranjero"
+                                        maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+            
+                    <!--Iniciamos la cuarta parte-->
+                    <br>
+                    <center>
+                        <table border="1">
+                            <tr>
+                                <th colspan="3">ESTADO DE SALUD Y HÁBITOS PERSONALES</th>
+                            </tr>
+                            <tr>
+                                <th>¿Cómo considera su estado de salud actual?</th>
+                                <th>¿Padece alguna enfermedad crónica? ¿cúal?</th>
+                                <th>¿Pertenece a algún Club Social o Deportivo?</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>
+                                        <input type="text" name="Salud" id="txtSalud" 
+                                        placeholder="Respuesta salud"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="enfermedad" id="txtEnfermedad" 
+                                        placeholder="Respuesta enfermedad"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="Club" id="txtClub" 
+                                        placeholder="Respuesta club"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                            </tr>       
+                            <tr>
+                                <th>¿Practica Ud. algún Deporte?</th>
+                                <th>¿Cual es su pasatiempo favorito?</th>
+                                <th>¿Cuál es su meta en la vida?</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>
+                                        <input type="text" name="Deporte" id="txtDeporte" 
+                                        placeholder="Respuesta deporte"
+                                        maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="pasatiempo" id="txtPasatiempo" 
+                                        placeholder="Respuesta pasaporte"
+                                        maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="Meta" id="txtMeta" 
+                                        placeholder="Respuesta meta en la vida"
+                                        maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+            
+                    <!--Iniciamos la quinta parte-->
+                    <br>
+                    <center>
+                        <table border="1">
+                            <tr>
+                                <th colspan="4">DATOS FAMILIARES</th>
+                            </tr>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Vive | Finado</th>
+                                <th>Domicilio</th>
+                                <th>Ocupación</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>
+                                        <input type="text" name="Padre" id="txtPadre" 
+                                        placeholder="Nombre padre"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="radio" name="txtDatosP" value="Vive" 
+                                        checked/>
+                                        <label for="txtDatosP"></label>
+            
+                                        <input type="radio" name="txtDatosP" value="Finado" />
+                                        <label for="txtDatosP"></label>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="Domicilio" id="txtDomicilio" 
+                                        placeholder="Ingresa su domicilio"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="Ocupacion" id="txtOcupacion" 
+                                        placeholder="Ingresa su ocupación"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>
+                                        <input type="text" name="Madre" id="txtMadre" 
+                                        placeholder="Nombre madre"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="radio" name="txtDatosM" value="Vive" 
+                                        checked/>
+                                        <label for="txtDatosM"></label>
+            
+                                        <input type="radio" name="txtDatosM" value="Finado" />
+                                        <label for="txtDatosM"></label>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="Domicilio" id="txtDomicilio" 
+                                        placeholder="Ingresa su domicilio"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="Ocupacion" id="txtOcupacion" 
+                                        placeholder="Ingresa su ocupación"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>
+                                        <input type="text" name="Conyuge" id="txtConyuge" 
+                                        placeholder="Nombre conyuge"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="radio" name="txtDatosC" value="Vive" 
+                                        checked/>
+                                        <label for="txtDatosC"></label>
+            
+                                        <input type="radio" name="txtDatosC" value="Finado" />
+                                        <label for="txtDatosC"></label>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="Domicilio" id="txtDomicilio" 
+                                        placeholder="Ingresa su domicilio"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="Ocupacion" id="txtOcupacion" 
+                                        placeholder="Ingresa su ocupación"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                            </tr>
+                            <center>
+                                <td colspan="4">Nombre, edades y ocupación de los hijos:
+                                <input type="text" name="Club" id="txtClub" 
+                                placeholder="Respuesta club"
+                                maxlength="50" minlength="10"/></td>
+                            </center>
+                            
+                        </table>
+                    </center>
+            
+                    <!--Iniciamos la sexta parte-->
+                    <br>
+                    <center>
+                        <table border="1">
+                            <tr>
+                                <th colspan="6">ESCOLARIDAD</th>
+                            </tr>
+                            <tr>
+                                <th rowspan="2">Nombre de  la escuela</th>
+                                <th rowspan="2">Domicilio</th>
+                                <th colspan="2">Fechas</th>
+                                <th rowspan="2">Años</th>
+                                <th rowspan="2">Recibio título o certificado</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>De:</center>
+                                </td> 
+                                <td>
+                                   <center>A:</center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>
+                                        Primaria:
+                                        <input type="text" name="Primaria" id="txtPrimaria" 
+                                        placeholder="Nombre Primaria"
+                                        maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                                <td>
+                                    <input type="text" name="DomPrim" id="txtDomPrim" 
+                                    placeholder="Domicilio Primaria"
+                                    maxlength="50" minlength="10"/>
+                                </td>
+                                <td>
+                                    <input type="date" name="txtInicioP" id="txtInicioP"
+                                    placeholder="Indica la fecha de inicio de tu primaria"/>
+                                </td>
+                                <td>
+                                    <input type="date" name="txtFinalP" id="txtFinalP"
+                                    placeholder="Indica la fecha final de tu primaria"/>
+                                </td>
+                                <td>
+                                    <input type="number" id="txtAñosP" name="txtAñosP" 
+                                    value="0" step="1" min="1" max="50"/>
+                                </td>
+                                <td>
+                                    <input type="radio" name="txtCertificadoP" value="Sí" 
+                                    checked/>
+                                    <label for="txtCertificadoP">Sí</label>
+                
+                                    <input type="radio" name="txtCertificadoP" value="No" />
+                                    <label for="txtCertificadoP">No</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>
+                                        Secundaria:
+                                        <input type="text" name="Secundaria" id="txtSecundaria" 
+                                        placeholder="Nombre Secundaria"
+                                        maxlength="50" minlength="10"/>
+                                    </center>              
+                                </td>
+                                <td>
+                                    <input type="text" name="DomSec" id="txtDomSec" 
+                                    placeholder="Domicilio Secundaria"
+                                    maxlength="50" minlength="10"/></td>
+                                </td>
+                                <td>
+                                    <input type="date" name="txtInicioS" id="txtInicioS"
+                                    placeholder="Indica la fecha de inicio de tu secundaria"/>
+                                </td>
+                                <td>
+                                    <input type="date" name="txtFinalS" id="txtFinalS"
+                                    placeholder="Indica la fecha final de tu secundaria"/>
+                                </td>
+                                <td>
+                                    <input type="number" id="txtAñosS" name="txtAñosS" 
+                                    value="0" step="1" min="1" max="50"/>
+                                </td>
+                                <td>
+                                    <input type="radio" name="txtCertificadoS" value="Sí" 
+                                    checked/>
+                                    <label for="txtCertificadoS">Sí</label>
+                
+                                    <input type="radio" name="txtCertificadoS" value="No" />
+                                    <label for="txtCertificadoS">No</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>
+                                        Preparatoria:
+                                        <input type="text" name="Preparatoria" id="txtPreparatoria" 
+                                        placeholder="Nombre Preparatoria"
+                                        maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                                <td>
+                                    <input type="text" name="DomPrep" id="txtDomPrep" 
+                                    placeholder="Domicilio Preparatoria"
+                                    maxlength="50" minlength="10"/></td>
+                                </td>
+                                <td>
+                                    <input type="date" name="txtInicioPrep" id="txtInicioPrep"
+                                    placeholder="Indica la fecha de inicio de tu preparatoria"/>
+                                </td>
+                                <td>
+                                    <input type="date" name="txtFinalPrep" id="txtFinalPrep"
+                                    placeholder="Indica la fecha final de tu preparatoria"/>
+                                </td>
+                                <td>
+                                    <input type="number" id="txtAñosPrep" name="txtAñosPrep" 
+                                    value="0" step="1" min="1" max="50"/>
+                                </td>
+                                <td>
+                                    <input type="radio" name="txtCertificadoPrep" value="Sí" 
+                                    checked/>
+                                    <label for="txtCertificadoPrep">Sí</label>
+                
+                                    <input type="radio" name="txtCertificadoPrep" value="No" />
+                                    <label for="txtCertificadoPrep">No</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>
+                                        Profesional:
+                                        <input type="text" name="Profesional" id="txtProfesional" 
+                                        placeholder="Nombre Profesional"
+                                        maxlength="50" minlength="10"/>
+                                    </center>
+                                    
+                                </td>
+                                <td>
+                                    <input type="text" name="DomProf" id="txtDomProf" 
+                                    placeholder="Domicilio Profesional"
+                                    maxlength="50" minlength="10"/></td>
+                                </td>
+                                <td>
+                                    <input type="date" name="txtInicioProf" id="txtInicioProf"
+                                    placeholder="Indica la fecha de inicio de tu profesinal"/>
+                                </td>
+                                <td>
+                                    <input type="date" name="txtFinalProf" id="txtFinalProf"
+                                    placeholder="Indica la fecha final de tu profesional"/>
+                                </td>
+                                <td>
+                                    <input type="number" id="txtAñosProf" name="txtAñosProf" 
+                                    value="0" step="1" min="1" max="50"/>
+                                </td>
+                                <td>
+                                    <input type="radio" name="txtCertificadoProf" value="Sí" 
+                                    checked/>
+                                    <label for="txtCertificadoProf">Sí</label>
+                
+                                    <input type="radio" name="txtCertificadoProf" value="No" />
+                                    <label for="txtCertificadoProf">No</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>
+                                        Comercial u otras:
+                                        <input type="text" name="Comercial" id="txtComercial" 
+                                        placeholder="Nombre Comercial u otras"
+                                        maxlength="50" minlength="10"/>
+                                    </center>
+                                    
+                                </td>
+                                <td>
+                                    <input type="text" name="DomOtras" id="txtOtras" 
+                                    placeholder="Domicilio Comercial u otras"
+                                    maxlength="50" minlength="10"/></td>
+                                </td>
+                                <td>
+                                    <input type="date" name="txtInicioC" id="txtInicioC"
+                                    placeholder="Indica la fecha de inicio de tu comercial"/>
+                                </td>
+                                <td>
+                                    <input type="date" name="txtFinalC" id="txtFinalC"
+                                    placeholder="Indica la fecha final de tu comercial"/>
+                                </td>
+                                <td>
+                                    <input type="number" id="txtAñosC" name="txtAñosC" 
+                                    value="0" step="1" min="1" max="50"/>
+                                </td>
+                                <td>
+                                    <input type="radio" name="txtCertificadoC" value="Sí" 
+                                    checked/>
+                                    <label for="txtCertificadoC">Sí</label>
+                
+                                    <input type="radio" name="txtCertificadoC" value="No" />
+                                    <label for="txtCertificadoC">No</label>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td colspan="6">
+                                    Estudios que efectuas en la actualidad: 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6">Escuela: <input type="text" name="ContinuarE" id="txtContinuarE" 
+                                    placeholder=""
+                                    maxlength="50" minlength="10"/>
+                                    Horario: <input type="text" name="ContinuarEH" id="txtContinuarEH" 
+                                    placeholder=""
+                                    maxlength="50" minlength="10"/>
+                                    Curso o Carrera: <input type="text" name="ContinuarECC" id="txtContinuarECC" 
+                                    placeholder=""
+                                    maxlength="50" minlength="10"/>
+                                    Grado: <input type="text" name="ContinuarEG" id="txtContinuarEG" 
+                                    placeholder=""
+                                    maxlength="50" minlength="10"/>
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+            
+                    <!--Iniciamos la septima parte parte del cuadro-->
+                    <br>
+                    <center>
+                        <table border="1">
+                            <tr>
+                                <th colspan="2">CONOCIMIENTOS GENERALES</th>
+                            </tr>
+                            <tr>
+                                <th>Idiomas habla (a parte del nativo)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Indique su nivel 50%, 75%, 100%)</th>
+                                <th>Funciones de oficina que domina</th>
+                            </tr>       
+                            <tr>
+                                <td>
+                                    <center>
+                                        <input type="number" id="Idioma" name="txtidioma" 
+                                        value="0" step="5" min="0" max="100"/>&nbsp;%
+                                    </center>
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="FuncionesO" id="FuncionesOtxt" 
+                                        placeholder="Ingrese sus funciones"
+                                        maxlength="50" minlength="10"/></td>
+                                    </center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Máquinas de oficina o taller que sepa manejar</th>
+                                <th>Software que domina</th>
+                            </tr>       
+                            <tr>
+                                <td>
+                                    <center>
+                                        <input type="text" name="MaquinasOf" id="MaquinasOfOtxt" 
+                                        placeholder="Ingrese las maquinas"
+                                        maxlength="50" minlength="10"/></td>
+                                    </center>
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="FSoftwareD" id="FSoftwareDtxt" 
+                                        placeholder="Ingrese los softwares"
+                                        maxlength="50" minlength="10"/></td>
+                                    </center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Otras funciones que domina</th>
+                            </tr>       
+                            <tr>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="FuncionesE" id="FuncionesEtxt" 
+                                        placeholder="Ingrese las otras funciones"
+                                        maxlength="50" minlength="10"/></td>
+                                    </center>
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+            
+                    <br>
+                    <!--Iniciamos la octava parte de la tabla-->
+                    <center>
+                        <table border="1">
+                            <tr>
+                                <th colspan="10">EMPLEO ACTUAL Y ANTERIORES</th>
+                            </tr>
+                            <tr>
+                                <th rowspan="3" colspan="2">Tiempo que prestó sus servicio</th>
+                                <th colspan="2">Empleo actual o último</th>
+                                <th colspan="2">Empleo anterior</th>
+                                <th colspan="2">Empleo anterior</th>
+                                <th colspan="2">Empleo anterior</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>
+                                        De:
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        A:
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        De:
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        A:
+                                    </center>    
+                                </td><td>
+                                    <center>
+                                        De:
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        A:
+                                    </center>    
+                                </td><td>
+                                    <center>
+                                        De:
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        A:
+                                    </center>    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <center>
+                                        <input type="date" name="txtTiempoS1" id="txtTiempoS1"
+                                        placeholder="Pon tu fecha de nacimiento aquí"/>
+                                    </center>    
+                                </th>
+                                <td>
+                                    <center>
+                                        <input type="date" name="txtTiempoS2" id="txtTiempoS2"
+                                        placeholder="Pon tu fecha de nacimiento aquí"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="date" name="txtTiempoS3" id="txtTiempoS3"
+                                        placeholder="Pon tu fecha de nacimiento aquí"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="date" name="txtTiempoS4" id="txtTiempoS4"
+                                        placeholder="Pon tu fecha de nacimiento aquí"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="date" name="txtTiempoS5" id="txtTiempoS5"
+                                        placeholder="Pon tu fecha de nacimiento aquí"/>
+                                    </center>    
+                                </td><td>
+                                    <center>
+                                        <input type="date" name="txtTiempoS6" id="txtTiempoS6"
+                                        placeholder="Pon tu fecha de nacimiento aquí"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="date" name="txtTiempoS7" id="txtTiempoS7"
+                                        placeholder="Pon tu fecha de nacimiento aquí"/>
+                                    </center>    
+                                </td><td>
+                                    <center>
+                                        <input type="date" name="txtTiempoS8" id="txtTiempoS8"
+                                        placeholder="Pon tu fecha de nacimiento aquí"/>
+                                    </center>    
+                                </td>
+                            </tr>      
+                            <tr>
+                                <th colspan="2">
+                                    <center>
+                                        Nombre de la Compañía
+                                    </center>
+                                </th>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="CompañiaT" id="CompañiaT" 
+                                        placeholder="Nombre de compañia" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="CompañiaT2" id="CompañiaT2" 
+                                        placeholder="Nombre de compañia" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="CompañiaT3" id="CompañiaT3" 
+                                        placeholder="Nombre de compañia" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="CompañiaT3" id="CompañiaT3" 
+                                        placeholder="Nombre de compañia" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>  
+                            </tr>  
+                            <tr>
+                                <th colspan="2">
+                                    <center>
+                                        Telefono
+                                    </center>
+                                </th>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="TelefonoC" id="TelefonoC" 
+                                        placeholder="Domicilio compañia" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td> 
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="DomicilioC2" id="DomicilioC2" 
+                                        placeholder="Domicilio compañia" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="DomicilioC3" id="DomicilioC3" 
+                                        placeholder="Domicilio compañia" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="DomicilioC3" id="DomicilioC3" 
+                                        placeholder="Domicilio compañia" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>  
+                            </tr>
+                            <tr>
+                                <th colspan="2">
+                                    <center>
+                                        Domicilio
+                                    </center>
+                                </th>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="DomicilioC" id="DomicilioC" 
+                                        placeholder="Domicilio compañia" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td> 
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="DomicilioC2" id="DomicilioC2" 
+                                        placeholder="Domicilio compañia" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="DomicilioC3" id="DomicilioC3" 
+                                        placeholder="Domicilio compañia" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="DomicilioC3" id="DomicilioC3" 
+                                        placeholder="Domicilio compañia" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>  
+                            </tr>         
+                            <tr>
+                                <th colspan="2">
+                                    <center>
+                                        Telefono
+                                    </center>
+                                </th>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="TelefonoC" id="TelefonoC" 
+                                        placeholder="Telefono compañia" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td> 
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="TelefonoC2" id="TelefonoC2" 
+                                        placeholder="Telefono compañia" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td> 
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="TelefonoC3" id="TelefonoC3" 
+                                        placeholder="Telefono compañia" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td> 
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="TelefonoC4" id="TelefonoC4" 
+                                        placeholder="Telefono compañia" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>   
+                            </tr>
+                            <tr>
+                                <th colspan="2">
+                                    <center>
+                                        Puesto desempeñado
+                                    </center>
+                                </th>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="PuestoC" id="PuestoC" 
+                                        placeholder="Puesto compañia" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td> 
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="PuestoC2" id="PuestoC2" 
+                                        placeholder="Puesto compañia" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td> 
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="PuestoC3" id="PuestoC3" 
+                                        placeholder="Puesto compañia" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td> 
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="PuestoC4" id="PuestoC4" 
+                                        placeholder="Puesto compañia" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>    
+                            </tr>     
+                            <tr>
+                                <th rowspan="2">
+                                    <center>
+                                        Sueldo Mensual
+                                    </center>
+                                </th>
+                                <th>Inicial</th>
+            
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="SueldoIC" id="SueldoICtxt" 
+                                        placeholder="Sueldo Incial" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td> 
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="SueldoIC2" id="SueldoIC2txt" 
+                                        placeholder="Sueldo Incial" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>   
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="SueldoIC3" id="SueldoIC3txt" 
+                                        placeholder="Sueldo Incial" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="SueldoIC4" id="SueldoIC4txt" 
+                                        placeholder="Sueldo Incial" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Final</th>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="SueldoFC" id="SueldoFCtxt" 
+                                        placeholder="Sueldo Final" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="SueldoFC2" id="SueldoFC2txt" 
+                                        placeholder="Sueldo Final" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="SueldoFC3" id="SueldoFC3txt" 
+                                        placeholder="Sueldo Final" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="SueldoFC4" id="SueldoFC4txt" 
+                                        placeholder="Sueldo Final" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">
+                                    <center>
+                                        Motivo de su separación
+                                    </center>
+                                </th>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="SeparacionT" id="SeparacionTtxt" 
+                                        placeholder="Motivo Separación" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td> 
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="SeparacionT2" id="SeparacionT2txt" 
+                                        placeholder="Motivo Separación" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td> 
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="SeparacionT3" id="SeparacionT3txt" 
+                                        placeholder="Motivo Separación" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>     
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="SeparacionT4" id="SeparacionT4txt" 
+                                        placeholder="Motivo Separación" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td> 
+                            </tr>
+                            <tr>
+                                <th colspan="2">
+                                    <center>
+                                        Nombre de su Jefe Directo
+                                    </center>
+                                </th>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="JefeD" id="JefeDtxt" 
+                                        placeholder="Nombre antiguo jefe" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td> 
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="JefeD2" id="JefeD2txt" 
+                                        placeholder="Nombre antiguo jefe" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>  
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="JefeD3" id="JefeD3txt" 
+                                        placeholder="Nombre antiguo jefe" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td> 
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="JefeD4" id="JefeD4txt" 
+                                        placeholder="Nombre antiguo jefe" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td> 
+                            </tr>
+                            <tr>
+                                <th colspan="2">
+                                    <center>
+                                        Puesto de su Jefe Directo
+                                    </center>
+                                </th>
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="PuestoJefeD" id="PuestoJefeDtxt" 
+                                        placeholder="Puesto antiguo jefe" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td> 
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="PuestoJefeD2" id="PuestoJefeD2txt" 
+                                        placeholder="Puesto antiguo jefe" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>   
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="PuestoJefeD3" id="PuestoJefeD3txt" 
+                                        placeholder="Puesto antiguo jefe" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>  
+                                <td colspan="2">
+                                    <center>
+                                        <input type="text" name="PuestoJefeD4" id="PuestoJefeD4txt" 
+                                        placeholder="Puesto antiguo jefe" maxlength="50" minlength="10"/>
+                                    </center>
+                                </td>  
+                            </tr>
+                            <tr>
+                                <th colspan="2">
+                                    <center>
+                                        ¿Podemos solicitar informes de usted?
+                                    </center>
+                                </th>
+                                <td colspan="2">
+                                    <input type="radio" name="txtinformes" value="Sí" 
+                                    checked/>
+                                    <label   label for="txtinformes">Sí</label>
+            
+                                    <input type="radio" name="txtinformes" value="No" />
+                                    <label for="txtinformes">No ¿Por qué?
+                                        <center>
+                                            <input type="text" name="razon" id="txtrazon" 
+                                            placeholder="Razon"
+                                            maxlength="50" minlength="10"/>
+                                        </center>
+                                    </label>
+                                </td>
+                                <td colspan="2">
+                                    <input type="radio" name="txtinformes2" value="Sí" 
+                                    checked/>
+                                    <label   label for="txtinformes2">Sí</label>
+            
+                                    <input type="radio" name="txtinformes2" value="No" />
+                                    <label for="txtinformes2">No ¿Por qué?
+                                        <center>
+                                            <input type="text" name="razon" id="txtrazon" 
+                                            placeholder="Razon"
+                                            maxlength="50" minlength="10"/>
+                                        </center>
+                                    </label>
+                                </td> 
+                                <td colspan="2">
+                                    <input type="radio" name="txtinformes3" value="Sí" 
+                                    checked/>
+                                    <label   label for="txtinformes3">Sí</label>
+            
+                                    <input type="radio" name="txtinformes3" value="No" />
+                                    <label for="txtinformes3">No ¿Por qué?
+                                        <center>
+                                            <input type="text" name="razon" id="txtrazon" 
+                                            placeholder="Razon"
+                                            maxlength="50" minlength="10"/>
+                                        </center>
+                                    </label>
+                                </td>  
+                                <td colspan="2">
+                                    <input type="radio" name="txtinformes4" value="Sí" 
+                                    checked/>
+                                    <label   label for="txtinformes4">Sí</label>
+            
+                                    <input type="radio" name="txtinformes4" value="No" />
+                                    <label for="txtinformes4">No ¿Por qué?
+                                        <center>    
+                                            <input type="text" name="razon" id="txtrazon" 
+                                            placeholder="Razon"
+                                            maxlength="50" minlength="10"/>
+                                        </center>
+                                    </label>
+                                </td>  
+                            </tr>
+                        </table>
+                    </center>
+            
+                    <!--Iniciamos la novena parte-->
+                    <br>
+                    <center>
+                        <table border="1">
+                            <tr>
+                                <th colspan="5">REFERENCIAS PERSONALES ( Favor de no incluir parientes o jefes anteriores )</th>
+                            </tr>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Telefono</th>
+                                <th>Domicilio</th>
+                                <th>Ocupación</th>
+                                <th>Tiempo conocerlo</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>
+                                        <input type="text" name="NomRefPersonal" id="NomRefPersonaltxt" 
+                                        placeholder="Nombre referencia"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="TelRefPersonal" id="TelRefPersonaltxt" 
+                                        placeholder="Telefono referencia"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="DomRefPersonal" id="DomRefPersonaltxt" 
+                                        placeholder="Domicilio referencia"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="OcuRefPersonal" id="OcuRefPersonaltxt" 
+                                        placeholder="Ocupación referencia"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="TimeRefPersonal" id="TimeRefPersonaltxt" 
+                                        placeholder="Ocupación referencia"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>
+                                        <input type="text" name="NomRefPersonal2" id="NomRefPersonal2txt" 
+                                        placeholder="Nombre referencia 2"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="TelRefPersonal2" id="TelRefPersonal2txt" 
+                                        placeholder="Telefono referencia 2"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="DomRefPersonal2" id="DomRefPersonal2txt" 
+                                        placeholder="Domicilio referencia 2"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="OcuRefPersonal2" id="OcuRefPersonal2txt" 
+                                        placeholder="Ocupación referencia 2"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="TimeRefPersonal2" id="TimeRefPersonal2txt" 
+                                        placeholder="Ocupación referencia 2"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>
+                                        <input type="text" name="NomRefPersonal3" id="NomRefPersonal3txt" 
+                                        placeholder="Nombre referencia 3"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="TelRefPersonal3" id="TelRefPersonal3txt" 
+                                        placeholder="Telefono referencia 3"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="DomRefPersonal3" id="DomRefPersonal3txt" 
+                                        placeholder="Domicilio referencia 3"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="OcuRefPersonal3" id="OcuRefPersonal3txt" 
+                                        placeholder="Ocupación referencia 3"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="TimeRefPersonal3" id="TimeRefPersonal3txt" 
+                                        placeholder="Ocupación referencia 3"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>
+                                        <input type="text" name="NomRefPersonal4" id="NomRefPersonal4txt" 
+                                        placeholder="Nombre referencia 4"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="TelRefPersonal4" id="TelRefPersonal4txt" 
+                                        placeholder="Telefono referencia 4"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="DomRefPersonal4" id="DomRefPersonal4txt" 
+                                        placeholder="Domicilio referencia 4"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="OcuRefPersonal4" id="OcuRefPersonal4txt" 
+                                        placeholder="Ocupación referencia 4"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                                <td>
+                                    <center>
+                                        <input type="text" name="TimeRefPersonal4" id="TimeRefPersonal4txt" 
+                                        placeholder="Ocupación referencia 4"
+                                        maxlength="50" minlength="10"/>
+                                    </center>    
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+        
+                    <!--Iniciamos la decima parte-->
+                    <br>
+                    <section>
+                        
+                        <div class="tablas">
+                            <div class="pf-1">
+                                <table border="1">
+                                    <tr>
+                                        <th>DATOS GENERALES</th>
+                                    </tr>
+                                    <tr>
+                                        <td>¿Cómo supo del empleo?</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="empleotxt" id="empleotxt" 
+                                            value="Anuncio"/>
+                                            <label for="empleotxt">Anuncio</label>
+                                            <input type="checkbox" name="empleotxt" id="empleotxt" 
+                                            value="Internet"/>
+                                            <label for="empleotxt">Internet</label>
+                                            <input type="checkbox" name="empleotxt" id="empleotxt" 
+                                            value="Otro"/>
+                                            <label for="empleotxt">Otro</label>
+                                            <input type="text" name="otroempleo" id="otroempleotxt" 
+                                                placeholder="Explique"
+                                                maxlength="50" minlength="10"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>¿Tiene parientes trabajando en esta Empresa?</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="parientesaquitxt" value="Sí" 
+                                            checked/>
+                                            <label for="parientesaquitxt">Sí</label>
+            
+                                            <input type="radio" name="parientesaquitxt" value="No" />
+                                            <label for="parientesaquitxt">No</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>¿Ha estado afiliado a algún sindicato?</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="sindicatotxt" value="Sí" 
+                                            checked/>
+                                            <label for="sindicatotxt">Sí</label>
+                                            <input type="radio" name="sindicatotxt" value="No" />
+                                            <label for="sindicatotxt">No</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>¿Tiene disponibilidad de horarios?</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="horariodisptxt" value="Sí" 
+                                            checked/>
+                                            <label for="horariodisptxt">Sí</label>
+                                            <input type="radio" name="horariodisptxt" value="No" />
+                                            <label for="horariodisptxt">No</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>¿Problemas de translado / transporte?</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="problematransportetxt" value="Sí" 
+                                            checked/>
+                                            <label for="problematransportetxt">Sí</label>
+                                            <input type="radio" name="problematransportetxt" value="No" />
+                                            <label for="problematransportetxt">No</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>¿Disposicion de viajar?</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="DisposicionViajartxt" value="Sí" 
+                                            checked/>
+                                            <label for="DisposicionViajartxt">Sí</label>
+                                            <input type="radio" name="DisposicionViajartxt" value="No" />
+                                            <label for="DisposicionViajartxt">No</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>¿Disponibilidad a cambiar su lugar de residencia?</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="CambiarResidenciatxt" value="Sí" 
+                                            checked/>
+                                            <label for="CambiarResidenciatxt">Sí</label>
+                                            <input type="radio" name="CambiarResidenciatxt" value="No" />
+                                            <label for="CambiarResidenciatxt">No</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fecha en que podría presentarse a trabajar</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <center>
+                                                <input type="date" name="presentaratrabajo" id="presentaratrabajotxt"
+                                                  placeholder="Pon tu fecha"/>
+                                            </center>
+                                          </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="pf-2">
+                                <table border="1">
+                                    <tr>
+                                        <th>
+                                            DATOS ECONÓMICOS
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>¿Tiene usted otros ingresos?</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="otroingresotxt" value="Sí" 
+                                            checked/>
+                                            <label for="otroingresotxt">Sí</label>
+                                            <input type="text" name="otrooingresotxt" id="otroingresotxt"
+                                            placeholder="Explique"
+                                            maxlength="50" minlength="4">
+                                            <input type="radio" name="otroingresotxt" value="No" />
+                                            <label for="otroingresotxt">No</label>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <input type="text" name="otrooingresotxt2" id="otroingresotxt2"
+                                            placeholder="$ Importe mensual $">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>¿Su cónyuge trabaja?</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="conyugeTrabajatxt" value="Sí" 
+                                            checked/>
+                                            <label for="conyugeTrabajatxt">Sí</label>
+                                            <input type="text" name="conyugeeTrabajatxt" id="conyugeTrabajatxt"
+                                            placeholder="Explique"
+                                            maxlength="50" minlength="4">
+                                            <input type="radio" name="conyugeTrabajatxt" value="No" />
+                                            <label for="conyugeTrabajatxt">No</label>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <input type="text" name="conyugeeTrabajatxt" id="conyugeTrabajatxt"
+                                            placeholder="$ Percepción mensual $">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>¿Vive en casa propia?</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="casapropiatxt" value="Sí" 
+                                            checked/>
+                                            <label for="casapropiatxt">Sí</label>
+                                            <input type="radio" name="casapropiatxt" value="No" />
+                                            <label for="casapropiatxt">No</label>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <input type="text" name="casaapropiatxt" id="casaapropiatxt"
+                                            placeholder="$ Valor aproximado $">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>¿Paga renta?</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="rentstxt" value="Sí" 
+                                            checked/>
+                                            <label for="rentstxt">Sí</label>
+                                            <input type="radio" name="rentstxt" value="No" />
+                                            <label for="rentstxt">No</label>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <input type="text" name="rentstxt" id="rentstxt"
+                                            placeholder="$ Importe $">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>¿Tiene automóvil propio ?</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="autopropiotxt" value="Sí" 
+                                            checked/>
+                                            <label for="autopropiotxt">Sí</label>
+                                            <input type="radio" name="autopropiotxt" value="No" />
+                                            <label for="autopropiotxt">No</label>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <input type="text" name="autopropiotxt" id="autopropiotxt"
+                                            placeholder="Marca">
+                                            <input type="text" name="autopropiotxt" id="autopropiotxt"
+                                            placeholder="Modelo">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>¿ Tiene deudas?¿Con quién?</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="deudaimpotetxt" value="Sí" 
+                                            checked/>
+                                            <label for="deudaimpotetxt">Sí</label>
+                                            <input type="radio" name="deudaimpotetxt" value="No" />
+                                            <label for="deudaimpotetxt">No</label>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <input type="text" name="deudaimpotetxt" id="deudaimpotetxt"
+                                            placeholder="Importe">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>¿Cuánto abona mensualmente?</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <input type="text" name="abonodeudatxt" id="abonodeudatxt"
+                                            placeholder="Importe">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>¿A cuánto ascienden sus gastos mensuales?</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <input type="text" name="gastomensualtxt" id="gastomensualtxt"
+                                            placeholder="Importe">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <section>
+                        <div class="tablas">
+                            <div class="pf-3">
+                                <table border="1">
+                                    <tr>
+                                        <th>
+                                            Comentarios del entrevistador
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <center>
+                                                <input type="text" name="comentariostxt" id="comentariostxt"
+                                                placeholder="Comentarios ">
+                                            </center>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>¿Candidato pasa a siguiente filtro?</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="sigfiltrotxt" value="Sí" 
+                                            checked/>
+                                            <label for="sigfiltrotxt">Sí</label>
+                                            <input type="radio" name="sigfiltrotxt" value="No" />
+                                            <label for="sigfiltrotxt">No</label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="pf-4">
+                                <table border="1">
+                                    <tr>
+                                        <th>
+                                            Hago constar que mis respuestas son verdaderas
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <center>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                
+                                                <input type="text" name="Firmatxt" id="Firmatxt"
+                                                placeholder="Nombre a modo de firma">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                               
+                                            </center>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Nombre Completo y Firma del Candidato
+                                        </th>
+                                    </tr>
+                                    
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+                <footer>
+                    <div class="botones">
+                        <div class="pf-5">
+                            <input type="reset" value="Borrar" name="btnBorrar"/>
+                        </div>
+                        <div class="pf-6">
+                            <input type="submit" value="Enviar" name="btnEnviar"/>
+                        </div>  
+                    </div>
+                </footer>
+            </form>
+        </fieldset>
+    </body>
+</html>
